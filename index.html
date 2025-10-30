@@ -12,187 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --bg-dark: #0a0f1a;
-        --bg-accent: #101826;
-        --primary: #00e0ff;
-        --text-light: #e0e0e0;
-        --text-muted: #a0a0a0;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-      }
-
-      body {
-        background: var(--bg-dark);
-        color: var(--text-light);
-        overflow-x: hidden;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem 4rem;
-        background: rgba(255, 255, 255, 0.02);
-        backdrop-filter: blur(8px);
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 10;
-      }
-
-      header h1 {
-        color: var(--primary);
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-
-      nav a {
-        margin-left: 2rem;
-        color: var(--text-light);
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      nav a:hover {
-        color: var(--primary);
-      }
-
-      .hero {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 2rem;
-        background: radial-gradient(circle at 50% 50%, #0a1120, #000);
-      }
-
-      .hero h2 {
-        font-size: 2.5rem;
-        color: var(--primary);
-        margin-bottom: 1rem;
-        animation: fadeInDown 1.2s ease;
-      }
-
-      .hero p {
-        font-size: 1.2rem;
-        color: var(--text-muted);
-        max-width: 700px;
-        animation: fadeInUp 1.5s ease;
-      }
-
-      .btn {
-        margin-top: 2rem;
-        padding: 0.8rem 2rem;
-        border: 1px solid var(--primary);
-        border-radius: 30px;
-        color: var(--primary);
-        background: transparent;
-        cursor: pointer;
-        font-weight: 600;
-        transition: all 0.3s;
-        display: inline-block;
-      }
-
-      .btn:hover {
-        background: var(--primary);
-        color: var(--bg-dark);
-      }
-
-      section {
-        padding: 6rem 4rem;
-      }
-
-      .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-      }
-
-      .service-card {
-        background: var(--bg-accent);
-        padding: 2rem;
-        border-radius: 12px;
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-
-      .service-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
-      }
-
-      .service-card h3 {
-        color: var(--primary);
-        margin-bottom: 1rem;
-      }
-
-      .service-card p {
-        color: var(--text-muted);
-      }
-
-      footer {
-        text-align: center;
-        padding: 2rem;
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        background: var(--bg-accent);
-      }
-
-      /* Botão flutuante do WhatsApp */
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 25px;
-        right: 25px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-        z-index: 100;
-        transition: transform 0.3s ease;
-      }
-
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-      }
-
-      .whatsapp-float i {
-        margin-top: 15px;
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -211,79 +33,73 @@
 
     <section class="hero">
       <h2>Consultoria em TI, Automação e DevOps</h2>
-      <p>
-        A BehindTheInfra ajuda empresas a acelerar seus processos de TI com
-        soluções inteligentes, automação de infraestrutura e práticas modernas
-        de DevOps.
+      <p class="section-description">
+        A BehindTheInfra ajuda empresas a acelerar seus processos de TI com soluções
+        inteligentes, automação de infraestrutura e práticas modernas de DevOps.
       </p>
-      <a href="#contato"><button class="btn">Fale com a BTI</button></a>
+      <a href="#contato" class="btn">Fale com a BTI</a>
     </section>
 
     <section id="sobre">
-      <h2 style="color: var(--primary); margin-bottom: 1rem;">Sobre a BTI</h2>
-      <p style="color: var(--text-muted); max-width: 800px;">
-        Somos uma consultoria de tecnologia especializada em DevOps e automação.
-        Nosso propósito é simplificar a complexidade da infraestrutura de TI,
-        permitindo que empresas foquem na inovação e crescimento. Atuamos com
-        práticas modernas, integração contínua, IaC e soluções multi-cloud.
+      <h2 class="section-title">Sobre a BTI</h2>
+      <p class="section-description">
+        Somos uma consultoria de tecnologia especializada em DevOps e automação. Nosso
+        propósito é simplificar a complexidade da infraestrutura de TI, permitindo que
+        empresas foquem na inovação e crescimento. Atuamos com práticas modernas,
+        integração contínua, IaC e soluções multi-cloud.
       </p>
     </section>
 
     <section id="servicos">
-      <h2 style="color: var(--primary); margin-bottom: 2rem;">
-        Nossos Serviços
-      </h2>
+      <h2 class="section-title section-title-lg">Nossos Serviços</h2>
       <div class="services">
         <div class="service-card">
           <h3>Automação de Infraestrutura</h3>
           <p>
             Implementamos pipelines automatizados e infraestrutura como código
-            (Terraform, Ansible) para garantir agilidade, segurança e
-            previsibilidade nas operações.
+            (Terraform, Ansible) para garantir agilidade, segurança e previsibilidade
+            nas operações.
           </p>
         </div>
         <div class="service-card">
           <h3>DevOps e CI/CD</h3>
           <p>
-            Estruturamos pipelines em GitLab, Azure DevOps e GitHub Actions com
-            foco em eficiência e integração contínua entre times de
-            desenvolvimento e operações.
+            Estruturamos pipelines em GitLab, Azure DevOps e GitHub Actions com foco em
+            eficiência e integração contínua entre times de desenvolvimento e operações.
           </p>
         </div>
         <div class="service-card">
           <h3>Observabilidade e Monitoramento</h3>
           <p>
-            Dashboards modernos com Grafana, Prometheus e OpenSearch para
-            visibilidade completa da infraestrutura e aplicações.
+            Dashboards modernos com Grafana, Prometheus e OpenSearch para visibilidade
+            completa da infraestrutura e aplicações.
           </p>
         </div>
         <div class="service-card">
           <h3>Consultoria Multi-Cloud</h3>
           <p>
-            Estratégias e implantação em Azure, AWS e GCP — com foco em
-            escalabilidade, custo e segurança.
+            Estratégias e implantação em Azure, AWS e GCP – com foco em escalabilidade,
+            custo e segurança.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="contato" style="text-align: center;">
-      <h2 style="color: var(--primary); margin-bottom: 1rem;">Entre em Contato</h2>
-      <p style="color: var(--text-muted); margin-bottom: 2rem;">
+    <section id="contato" class="section-centered">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-description">
         Pronto para transformar sua infraestrutura? Fale conosco.
       </p>
-      <a href="mailto:behindtheinfra@gmail.com" class="btn">behindtheinfra@gmail.com</a>
-      <br /><br />
-      <a
-        href="https://wa.me/5519999076116"
-        target="_blank"
-        class="btn"
-        style="border-color: #25d366; color: #25d366;"
+      <a href="mailto:behindtheinfra@gmail.com" class="btn"
+        >behindtheinfra@gmail.com</a
+      >
+      <br />
+      <br />
+      <a href="https://wa.me/5519999076116" target="_blank" class="btn btn--whatsapp"
         >Falar pelo WhatsApp</a
       >
     </section>
 
-    <!-- Botão flutuante de WhatsApp -->
     <a
       href="https://wa.me/5519999076116"
       class="whatsapp-float"
@@ -298,3 +114,4 @@
     </footer>
   </body>
 </html>
+
