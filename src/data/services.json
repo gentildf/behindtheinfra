@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Automação de Infraestrutura",
+    "description": "Implementamos pipelines automatizados e infraestrutura como código (Terraform, Ansible) para garantir agilidade, segurança e previsibilidade nas operações.",
+    "focus": ["Pipelines automatizados", "Infraestrutura como código"],
+    "tools": ["Terraform", "Ansible"]
+  },
+  {
+    "title": "DevOps e CI/CD",
+    "description": "Estruturamos pipelines em GitLab, Azure DevOps e GitHub Actions com foco em eficiência e integração contínua entre times de desenvolvimento e operações.",
+    "focus": ["Integração contínua", "Entrega contínua"],
+    "tools": ["GitLab", "Azure DevOps", "GitHub Actions"]
+  },
+  {
+    "title": "Observabilidade e Monitoramento",
+    "description": "Dashboards modernos com Grafana, Prometheus e OpenSearch para visibilidade completa da infraestrutura e aplicações.",
+    "focus": ["Observabilidade", "Monitoramento"],
+    "tools": ["Grafana", "Prometheus", "OpenSearch"]
+  },
+  {
+    "title": "Consultoria Multi-Cloud",
+    "description": "Estratégias e implantação em Azure, AWS e GCP – com foco em escalabilidade, custo e segurança.",
+    "focus": ["Estratégia cloud", "Governança"],
+    "tools": ["Azure", "AWS", "GCP"]
+  }
+]
+

@@ -1,0 +1,7 @@
+# Temporary workspace for Codex documentation collaboration
+codex-docs/
+
+# Ignorando estrutura futura
+scripts/
+config/
+package.json
