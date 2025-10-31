@@ -63,3 +63,19 @@ section {
   padding: 6rem 4rem;
 }
 
+/* Animated particles background canvas */
+#particles {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Remove underline from anchor-styled buttons */
+.btn { text-decoration: none; }
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:focus,
+.btn:active { text-decoration: none; }

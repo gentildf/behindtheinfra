@@ -137,3 +137,16 @@ footer {
     transform: translateY(0);
   }
 }
+/* Remover sublinhado do botão WhatsApp */
+a.btn.btn--whatsapp,
+a.btn.btn--whatsapp:link,
+a.btn.btn--whatsapp:visited,
+a.btn.btn--whatsapp:hover,
+a.btn.btn--whatsapp:focus,
+a.btn.btn--whatsapp:active {
+  text-decoration: none;
+}
+/* Remover sublinhado do botão flutuante */
+a.whatsapp-float {
+  text-decoration: none;
+}
